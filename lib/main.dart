@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:syncfusion_flutter_datepicker/datepicker.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,21 +13,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       localizationsDelegates: [
+       localizationsDelegates: const[
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      supportedLocales: [
-        const Locale('en'),
-        const Locale('es'),
-        const Locale('he'),
-        const Locale('ru'),
-        const Locale('fr', 'BE'),
-        const Locale('fr', 'CA'),
-        const Locale('ja'),
-        const Locale('de'),
-        const Locale('hi'),
-        const Locale('ar'),
+      supportedLocales: const[
+        Locale('en'),
+        Locale('es'),
+        Locale('he'),
+        Locale('ru'),
+        Locale('fr', 'BE'),
+        Locale('fr', 'CA'),
+        Locale('ja'),
+        Locale('de'),
+        Locale('hi'),
+        Locale('ar'),
       ],
       locale: const Locale('es'),
       debugShowCheckedModeBanner: false,
